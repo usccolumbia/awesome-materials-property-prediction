@@ -1743,12 +1743,11 @@ Datasets for each commonly predicted property, with sample counts and download l
 
 | Property | Unit | Dataset | Collection | Samples | Input | Fidelity |
 | --- | --- | --- | --- | ---: | --- | --- |
-| Band gap & heat of formation (perovskites) | eV | [castelli_perovskites](https://hackingmaterials.lbl.gov/matminer/dataset_summary.html) | matminer datasets | 18,928 | structure | DFT-GLLBSC/RPBE |
 | Decomposition energy / stability | eV/atom | [GNoME stable materials](https://github.com/google-deepmind/materials_discovery) | GNoME | ~381,000 | structure | DFT-PBE |
 | Energy above hull | eV/atom | [MateriaViva-Open](https://huggingface.co/datasets/AI4QC/MateriaViva-Open) | MateriaViva (HF, AI4QC) | 7,259,115 | structure | mixed (per-method) |
 | Energy above hull | eV/atom | [JARVIS dft_3d (2022.12.12)](https://ndownloader.figshare.com/files/38521619) | JARVIS-DFT | 75,993 | structure | DFT-OptB88vdW |
 | Energy of nitride polymorphs | eV/atom | [tholander_nitrides](https://hackingmaterials.lbl.gov/matminer/dataset_summary.html) | matminer datasets | 12,815 | structure | DFT |
-| Energy, forces (aggregated MLIP data) | various | [ColabFit (HF org)](https://huggingface.co/colabfit) | ColabFit | ? | structure | various DFT |
+| Energy, forces (aggregated MLIP data) | various | [ColabFit (HF org)](https://huggingface.co/colabfit) | ColabFit | 369 datasets | structure | various DFT |
 | Energy, forces, stress | eV; eV/A; GPa | [OMat24](https://huggingface.co/datasets/facebook/OMAT24) | OMat24 | ~110,000,000 | structure | DFT-PBE/PBE+U |
 | Energy, forces, stress | eV; eV/A; GPa | [MatPES](https://matpes.ai) | MatPES | ~400,000 | structure | DFT-PBE and r2SCAN |
 | Energy, forces, stress, magmom | eV; eV/A; GPa | [MPtrj](https://figshare.com/articles/dataset/23713842) | MPtrj | ~1,580,395 | structure | DFT-PBE/PBE+U |
@@ -1763,7 +1762,7 @@ Datasets for each commonly predicted property, with sample counts and download l
 | Formation energy | eV/atom | [flla](https://hackingmaterials.lbl.gov/matminer/dataset_summary.html) | matminer datasets | 3,938 | structure | DFT-PBE |
 | Formation energy | eV/atom | [JARVIS dft_2d (2022.12.12)](https://ndownloader.figshare.com/files/38521268) | JARVIS-DFT | 1,103 | structure | DFT-OptB88vdW |
 | Formation energy & vacancy formation energy (perovskite oxides) | eV/atom | [wolverton_oxides](https://hackingmaterials.lbl.gov/matminer/dataset_summary.html) | matminer datasets | 4,914 | composition | DFT-PBE |
-| Formation energy (perovskites) | eV/unit cell | [matbench_perovskites](https://matbench.materialsproject.org/) | Matbench v0.1 | 18,928 | structure | DFT-RPBE |
+| Formation energy (perovskites) | eV/unit cell | [matbench_perovskites / castelli_perovskites](https://matbench.materialsproject.org/) | Matbench v0.1 / matminer | 18,928 | structure | DFT-RPBE |
 | Formation energy / energy above hull | eV/atom | [Materials Project](https://next-gen.materialsproject.org/) | Materials Project | ~170,000 | structure | DFT-PBE/PBE+U (r2SCAN mixing) |
 | Formation energy / stability | eV/atom | [OQMD](https://oqmd.org) | OQMD | ~1,300,000 | structure | DFT-PBE |
 | Formation energy, band gap | eV/atom; eV | [AFLOW](https://aflowlib.org) | AFLOW | ~3,500,000 | structure | DFT-PBE |
@@ -1781,8 +1780,7 @@ Datasets for each commonly predicted property, with sample counts and download l
 | Band gap | eV | [matbench_mp_gap](https://matbench.materialsproject.org/) | Matbench v0.1 | 106,113 | structure | DFT-PBE |
 | Band gap (double perovskites) | eV | [double_perovskites_gap](https://hackingmaterials.lbl.gov/matminer/dataset_summary.html) | matminer datasets | 1,306 | composition | DFT-GLLBSC |
 | Band gap (experimental) | eV | [expt_gap](https://hackingmaterials.lbl.gov/matminer/dataset_summary.html) | matminer datasets | 6,354 | composition | experiment |
-| Band gap (experimental) | eV | [matbench_expt_gap](https://matbench.materialsproject.org/) | Matbench v0.1 | 4,604 | composition | experiment |
-| Band gap (experimental) | eV | [expt_gap_kingsbury](https://hackingmaterials.lbl.gov/matminer/dataset_summary.html) | matminer datasets | 4,604 | composition | experiment |
+| Band gap (experimental) | eV | [matbench_expt_gap / expt_gap_kingsbury](https://matbench.materialsproject.org/) | Matbench v0.1 / matminer | 4,604 | composition | experiment |
 | Band gap (HSE06) | eV | [JARVIS dft_3d (2022.12.12)](https://ndownloader.figshare.com/files/38521619) | JARVIS-DFT | 56 | structure | DFT-HSE06 |
 | Band gap (OptB88vdW) | eV | [JARVIS dft_3d (2022.12.12)](https://ndownloader.figshare.com/files/38521619) | JARVIS-DFT | 75,993 | structure | DFT-OptB88vdW |
 | Band gap (OptB88vdW) | eV | [JARVIS dft_2d (2022.12.12)](https://ndownloader.figshare.com/files/38521268) | JARVIS-DFT | 1,103 | structure | DFT-OptB88vdW |
@@ -1796,7 +1794,7 @@ Datasets for each commonly predicted property, with sample counts and download l
 | Electron effective mass | m_e | [JARVIS dft_3d (2022.12.12)](https://ndownloader.figshare.com/files/38521619) | JARVIS-DFT | 17,645 | structure | DFT-BoltzTraP |
 | Electronic transport (Seebeck, conductivity) | various | [ricci_boltztrap_mp_tabular](https://hackingmaterials.lbl.gov/matminer/dataset_summary.html) | matminer datasets | 47,737 | structure | DFT-PBE |
 | Hole effective mass | m_e | [JARVIS dft_3d (2022.12.12)](https://ndownloader.figshare.com/files/38521619) | JARVIS-DFT | 17,645 | structure | DFT-BoltzTraP |
-| Lattice thermal conductivity | W/m/K | [AFLOW-AGL / TCMD sets](https://aflowlib.org) | AFLOW | ? | structure | DFT |
+| Lattice thermal conductivity | W/m/K | [Phonix](https://doi.org/10.1038/s41524-026-02033-w) | Phonix | ~6,500 | structure | DFT (anharmonic phonons) |
 | Metallicity (classification) | bool | [matbench_mp_is_metal](https://matbench.materialsproject.org/) | Matbench v0.1 | 106,113 | structure | DFT-PBE |
 | Metallicity (classification) | bool | [matbench_expt_is_metal](https://matbench.materialsproject.org/) | Matbench v0.1 | 4,921 | composition | experiment |
 | Phonon band structure/DOS (DFPT) | cm^-1 | [Petretto phonon DB](https://doi.org/10.6084/m9.figshare.c.3938023) | Materials Project | ~1,521 | structure | DFT-PBEsol (DFPT) |
@@ -1826,8 +1824,7 @@ Datasets for each commonly predicted property, with sample counts and download l
 | Shear modulus (log10 G_VRH) | log10(GPa) | [matbench_log_gvrh](https://matbench.materialsproject.org/) | Matbench v0.1 | 10,987 | structure | DFT-PBE |
 | Shear modulus (Voigt) | GPa | [JARVIS dft_3d (2022.12.12)](https://ndownloader.figshare.com/files/38521619) | JARVIS-DFT | 23,824 | structure | DFT-OptB88vdW |
 | Shear modulus G_VRH | GPa | [MateriaViva-Open](https://huggingface.co/datasets/AI4QC/MateriaViva-Open) | MateriaViva (HF, AI4QC) | 181,088 | structure | mixed (per-method) |
-| Yield & tensile strength (steels) | MPa | [steel_strength](https://hackingmaterials.lbl.gov/matminer/dataset_summary.html) | matminer datasets | 312 | composition | experiment |
-| Yield strength (steels) | MPa | [matbench_steels](https://matbench.materialsproject.org/) | Matbench v0.1 | 312 | composition | experiment |
+| Yield strength (steels) | MPa | [matbench_steels / steel_strength](https://matbench.materialsproject.org/) | Matbench v0.1 / matminer | 312 | composition | experiment |
 
 ### Dielectric, optical and piezoelectric
 
@@ -1867,7 +1864,7 @@ Datasets for each commonly predicted property, with sample counts and download l
 | Seebeck coefficient | muV/K | [MateriaViva-Open](https://huggingface.co/datasets/AI4QC/MateriaViva-Open) | MateriaViva (HF, AI4QC) | 31,097 | structure | mixed (per-method) |
 | Seebeck coefficient (n) | uV/K | [JARVIS dft_3d (2022.12.12)](https://ndownloader.figshare.com/files/38521619) | JARVIS-DFT | 23,218 | structure | DFT-BoltzTraP |
 | Seebeck coefficient (n) | uV/K | [JARVIS dft_2d (2022.12.12)](https://ndownloader.figshare.com/files/38521268) | JARVIS-DFT | 806 | structure | DFT-BoltzTraP |
-| Thermoelectric properties (experimental) | various | [Starrydata / Citrine TE](https://www.starrydata2.org) | Starrydata | ? | structure | experiment |
+| Thermoelectric properties (experimental) | various | [Starrydata / Citrine TE](https://www.starrydata2.org) | Starrydata | ~82k samples | composition | experiment |
 
 ### Magnetic and superconducting
 
@@ -1887,12 +1884,12 @@ Datasets for each commonly predicted property, with sample counts and download l
 | Property | Unit | Dataset | Collection | Samples | Input | Fidelity |
 | --- | --- | --- | --- | ---: | --- | --- |
 | CO2 uptake (MOFs) | mol/kg | [MateriaViva-Open](https://huggingface.co/datasets/AI4QC/MateriaViva-Open) | MateriaViva (HF, AI4QC) | 415,108 | structure | mixed (per-method) |
-| Contributed property sets | various | [MPContribs](https://contribs.materialsproject.org) | Materials Project | ? | structure | various |
+| Contributed property sets | various | [MPContribs](https://contribs.materialsproject.org) | Materials Project | 72 projects | structure | various |
 | Glass-forming ability | bool | [glass_ternary_landolt](https://hackingmaterials.lbl.gov/matminer/dataset_summary.html) | matminer datasets | 7,191 | composition | experiment |
 | Glass-forming ability | bool | [glass_binary](https://hackingmaterials.lbl.gov/matminer/dataset_summary.html) | matminer datasets | 5,959 | composition | experiment |
 | Glass-forming ability (classification) | bool | [matbench_glass](https://matbench.materialsproject.org/) | Matbench v0.1 | 5,680 | composition | experiment |
 | Glass-forming ability (HiTp sputtering) | bool | [glass_ternary_hipt](https://hackingmaterials.lbl.gov/matminer/dataset_summary.html) | matminer datasets | 5,170 | composition | experiment |
-| Mixed DFT outputs | various | [NOMAD](https://nomad-lab.eu) | NOMAD | ? | structure | various DFT |
+| Mixed DFT outputs | various | [NOMAD](https://nomad-lab.eu) | NOMAD | ~19M entries | structure | various DFT |
 | Multiple (11 properties) | various | [LLM4Mat-Bench](https://github.com/vertaix/LLM4Mat-Bench) | LLM4Mat-Bench | ~1,900,000 | structure | various |
 | Pore geometry (MOFs) | A; m^2/g | [CoRE MOF 2019](https://zenodo.org/records/3677685) | CoRE MOF | ~14,000 | structure | geometric |
 
