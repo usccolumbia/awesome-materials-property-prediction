@@ -1864,7 +1864,7 @@ Datasets for each commonly predicted property, with sample counts and download l
 | Seebeck coefficient | muV/K | [MateriaViva-Open](https://huggingface.co/datasets/AI4QC/MateriaViva-Open) | MateriaViva (HF, AI4QC) | 31,097 | structure | mixed (per-method) |
 | Seebeck coefficient (n) | uV/K | [JARVIS dft_3d (2022.12.12)](https://ndownloader.figshare.com/files/38521619) | JARVIS-DFT | 23,218 | structure | DFT-BoltzTraP |
 | Seebeck coefficient (n) | uV/K | [JARVIS dft_2d (2022.12.12)](https://ndownloader.figshare.com/files/38521268) | JARVIS-DFT | 806 | structure | DFT-BoltzTraP |
-| Thermoelectric properties (experimental) | various | [Starrydata / Citrine TE](https://www.starrydata2.org) | Starrydata | ~82k samples | composition | experiment |
+| Thermoelectric properties (experimental) | various | [Starrydata / Citrine TE](https://www.starrydata2.org) | Starrydata | 55,422 | composition | experiment |
 
 ### Magnetic and superconducting
 
