@@ -1,0 +1,4 @@
+.DS_Store
+.link_cache.json
+*.bak*
+__pycache__/

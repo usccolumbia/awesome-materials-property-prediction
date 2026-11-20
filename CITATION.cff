@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "If you use this resource list or the accompanying data, please cite it as below."
+title: "Awesome Materials Property Prediction: a curated list of features, models, OOD generalization, small-data learning, benchmarks and leaderboards for ML prediction of materials properties"
+type: dataset
+version: 0.2.0
+date-released: 2026-11-20
+license: MIT
+repository-code: "https://github.com/usccolumbia/awesome-materials-property-prediction"
+keywords: [materials property prediction, graph neural networks, machine learning interatomic potentials, matbench, out-of-distribution generalization, awesome list]
+authors:
+  - family-names: Hu
+    given-names: Jianjun
+    affiliation: "Department of Computer Science and Engineering, University of South Carolina"

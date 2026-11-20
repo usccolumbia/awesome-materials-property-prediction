@@ -1,0 +1,117 @@
+{
+  "Matbench Discovery": {
+    "url": "https://matbench-discovery.materialsproject.org/",
+    "checked_on": "2026-11-08",
+    "tasks": "Stability discovery on WBM test set (~257k structures) + geometry optimization (RMSD) + thermal conductivity (kappa_SRME, PhononDB subset) + MD/diatomic diagnostics",
+    "metrics": [
+      "CPS",
+      "F1",
+      "DAF",
+      "Precision",
+      "Accuracy",
+      "MAE",
+      "R2",
+      "RMSD",
+      "kappa_SRME",
+      "CMDS",
+      "CDS"
+    ],
+    "top_models": [
+      {
+        "name": "DPA-4.1-Max-OAM-PFT",
+        "metric": "CPS",
+        "value": 0.913,
+        "F1": 0.935,
+        "DAF": 6.089,
+        "RMSD": 0.058,
+        "kappa_SRME": 0.081
+      },
+      {
+        "name": "Prophet-OAME-MBD",
+        "metric": "CPS",
+        "value": 0.912,
+        "F1": 0.928,
+        "DAF": 6.065,
+        "RMSD": 0.059,
+        "kappa_SRME": 0.065
+      },
+      {
+        "name": "DPA-4.1-Max-OAM",
+        "metric": "CPS",
+        "value": 0.91,
+        "F1": 0.933,
+        "DAF": 6.16,
+        "RMSD": 0.057,
+        "kappa_SRME": 0.09
+      }
+    ],
+    "notes": "Ranking by default CPS on the compliant+non-compliant combined table as displayed on the landing page; values read via page fetch."
+  },
+  "Matbench": {
+    "url": "https://matbench.materialsproject.org/",
+    "checked_on": "2026-11-08",
+    "tasks": 13,
+    "metrics": [
+      "MAE (regression tasks, 10)",
+      "ROC-AUC (classification tasks, 3)"
+    ],
+    "top_models": [
+      {
+        "name": "coGN",
+        "metric": "matbench_mp_e_form mean MAE (eV/atom)",
+        "value": 0.017
+      },
+      {
+        "name": "coNGN",
+        "metric": "matbench_mp_e_form mean MAE (eV/atom)",
+        "value": 0.0178
+      },
+      {
+        "name": "ALIGNN",
+        "metric": "matbench_mp_e_form mean MAE (eV/atom)",
+        "value": 0.0215
+      }
+    ],
+    "notes": "No single overall ranking shown; top-3 given for the flagship mp_e_form task. Per-task leaders counted: MODNet leads 5 tasks, coGN 3, coNGN 2."
+  },
+  "JARVIS-Leaderboard": {
+    "url": "https://pages.nist.gov/jarvis_leaderboard/",
+    "checked_on": "2026-11-08",
+    "tasks": 322,
+    "metrics": [
+      "MAE",
+      "RMSE",
+      "accuracy/ROC-AUC",
+      "multi-MAE (spectra)"
+    ],
+    "top_models": [
+      {
+        "name": "kgcnn_coGN",
+        "metric": "dft_3d_formation_energy_peratom MAE (eV/atom)",
+        "value": 0.0271
+      },
+      {
+        "name": "kgcnn_coNGN",
+        "metric": "dft_3d_formation_energy_peratom MAE (eV/atom)",
+        "value": 0.0291
+      },
+      {
+        "name": "potnet",
+        "metric": "dft_3d_formation_energy_peratom MAE (eV/atom)",
+        "value": 0.0293
+      }
+    ],
+    "notes": "322 benchmarks, 2087 contributions, 503 methods; categories AI 1034, ES 741, FF 282, EXP 25, QC 6 contributions. Top-3 shown for the representative dft_3d formation-energy task."
+  },
+  "MLIP Arena": {
+    "url": "https://huggingface.co/spaces/atomind/mlip-arena",
+    "checked_on": "2026-11-08",
+    "tasks": "Diatomics, EOS, MD stability, phonon, NEB, elasticity, structure optimization",
+    "metrics": [
+      "physical-consistency metrics (e.g., diatomic smoothness, conservation, MD stability)",
+      "runtime"
+    ],
+    "top_models": [],
+    "notes": "Hugging Face Space is a dynamic app; neither the Space metadata nor the GitHub README (github.com/atomind-ai/mlip-arena) exposed a ranking via fetch, so top models were not recorded."
+  }
+}
